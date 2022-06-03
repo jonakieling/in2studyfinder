@@ -205,7 +205,7 @@ class StudyCourse extends AbstractEntity implements StudyCourseInterface
     /**
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\In2code\In2studyfinder\Domain\Model\TtContentInterface>|null
      */
-    public function getContentElements(): ObjectStorage
+    public function getContentElements(): ?ObjectStorage
     {
         return $this->contentElements;
     }
@@ -251,7 +251,7 @@ class StudyCourse extends AbstractEntity implements StudyCourseInterface
     /**
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\In2code\In2studyfinder\Domain\Model\TypeOfStudyInterface>|null
      */
-    public function getTypesOfStudy(): ObjectStorage
+    public function getTypesOfStudy(): ?ObjectStorage
     {
         return $this->typesOfStudy;
     }
@@ -277,7 +277,7 @@ class StudyCourse extends AbstractEntity implements StudyCourseInterface
     /**
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\In2code\In2studyfinder\Domain\Model\CourseLanguageInterface>|null
      */
-    public function getCourseLanguages(): ObjectStorage
+    public function getCourseLanguages(): ?ObjectStorage
     {
         return $this->courseLanguages;
     }
@@ -303,7 +303,7 @@ class StudyCourse extends AbstractEntity implements StudyCourseInterface
     /**
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\In2code\In2studyfinder\Domain\Model\AdmissionRequirementInterface>|null
      */
-    public function getAdmissionRequirements(): ObjectStorage
+    public function getAdmissionRequirements(): ?ObjectStorage
     {
         return $this->admissionRequirements;
     }
@@ -329,7 +329,7 @@ class StudyCourse extends AbstractEntity implements StudyCourseInterface
     /**
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\In2code\In2studyfinder\Domain\Model\StartOfStudy>|null
      */
-    public function getStartsOfStudy(): ObjectStorage
+    public function getStartsOfStudy(): ?ObjectStorage
     {
         return $this->startsOfStudy;
     }

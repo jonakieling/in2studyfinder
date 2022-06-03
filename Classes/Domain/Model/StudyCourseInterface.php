@@ -49,7 +49,7 @@ interface StudyCourseInterface
 
     public function removeContentElement(TtContentInterface $contentElementToRemove);
 
-    public function getContentElements(): ObjectStorage;
+    public function getContentElements(): ?ObjectStorage;
 
     public function setContentElements(ObjectStorage $contentElements);
 
@@ -65,7 +65,7 @@ interface StudyCourseInterface
 
     public function setFaculty(FacultyInterface $faculty);
 
-    public function getTypesOfStudy(): ObjectStorage;
+    public function getTypesOfStudy(): ?ObjectStorage;
 
     public function setTypesOfStudy(ObjectStorage $typesOfStudy);
 
@@ -73,7 +73,7 @@ interface StudyCourseInterface
 
     public function removeTypeOfStudy(TypeOfStudyInterface $typeOfStudyToRemove);
 
-    public function getCourseLanguages(): ObjectStorage;
+    public function getCourseLanguages(): ?ObjectStorage;
 
     public function setCourseLanguages(ObjectStorage $courseLanguages);
 
@@ -81,7 +81,7 @@ interface StudyCourseInterface
 
     public function removeCourseLanguage(CourseLanguageInterface $courseLanguageToRemove);
 
-    public function getAdmissionRequirements(): ObjectStorage;
+    public function getAdmissionRequirements(): ?ObjectStorage;
 
     public function setAdmissionRequirements(ObjectStorage $admissionRequirements);
 
@@ -89,7 +89,7 @@ interface StudyCourseInterface
 
     public function removeAdmissionRequirement(AdmissionRequirementInterface $admissionRequirementToRemove);
 
-    public function getStartsOfStudy(): ObjectStorage;
+    public function getStartsOfStudy(): ?ObjectStorage;
 
     public function setStartsOfStudy(ObjectStorage $startsOfStudy);
 
